@@ -1,0 +1,20 @@
+﻿
+@{
+    ViewBag.Title = "Test";
+}
+
+<h2>Test</h2>
+
+<div ng-app="MyApp">
+    <div ng-controller="EmployeeController">
+        <input ng-model="EmployeeID" type="text" />
+        <input ng-model="EmployeeName" type="text" />
+        <div>{{EmployeeID}}</div>
+        <div>{{EmployeeName}}</div>
+        <div></div>
+    </div>    
+</div>
+
+@section scripts{
+<script src="~/Scripts/AngularController/EmployeeController.js"></script>
+}

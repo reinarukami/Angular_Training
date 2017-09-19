@@ -1,0 +1,52 @@
+﻿
+@{
+    ViewBag.Title = "LastContact";
+}
+
+<h2>LastContact</h2>
+
+<div ng-change="LastContactController">
+    <table>
+        <tr>
+            <td>ContactID:</td>
+            <td>{{Contact.ContactID}}</td>
+        </tr>
+
+        <tr>
+            <td>First Name:</td>
+            <td>{{Contact.FirstName}}</td>
+        </tr>
+
+        <tr>
+            <td>Last Name:</td>
+            <td>{{Contact.LastName}}</td>
+        </tr>
+
+        <tr>
+            <td>ContactNo1:</td>
+            <td>{{Contact.ContactNo1}}</td>
+        </tr>
+
+        <tr>
+            <td>ContactNo2:</td>
+            <td>{{Contact.ContactNo2}}</td>
+        </tr>
+
+        <tr>
+            <td>Email:</td>
+            <td>{{Contact.EmailID}}</td>
+        </tr>
+
+        <tr>
+            <td>Address:</td>
+            <td>{{Contact.Address}}</td>
+        </tr>
+
+
+    </table>
+</div>
+
+@section scripts{
+    <script src="~/Scripts/AngularController/LastContactController.js"></script>
+}
+
